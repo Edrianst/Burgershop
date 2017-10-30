@@ -1,0 +1,13 @@
+//config
+@import "config/mixins";
+@import "config/vars";
+
+//layout
+@import "layout/base";
+@import "layout/adjustments";
+@import "layout/fonts";
+
+//sections
+@import "sections/first";
+@import "sections/about-us";
+@import "sections/reviews";

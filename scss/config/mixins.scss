@@ -1,0 +1,14 @@
+@mixin circle($width, $color) {
+    width: $width;
+    height: $width;
+    border-radius: 50%;
+    background-color: $color;
+}
+
+@for $i from 1 through 8 {
+    .reviews__item--#{$i} { 
+        background: url("../img/photo-#{$i}.jpg");
+    }
+  }
+
+  

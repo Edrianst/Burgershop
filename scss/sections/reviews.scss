@@ -1,0 +1,41 @@
+.reviews {
+    background-color: #ccc;
+	background-position: center;
+	background-size: cover;
+	justify-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reviews__item {
+	position: relative;
+	height: 50vh;
+    flex: 0 0 25%;
+    background-size: cover;
+}
+
+.reviews__desc {
+    padding: 50px 25px 50px 16px;
+    opacity: 0;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.desc__title {
+    font-family: 'Gagalin';
+    color: #fff;
+}
+
+.desc__text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.order-btn--more {
+    background-color: $dark;
+    margin: 0;
+}

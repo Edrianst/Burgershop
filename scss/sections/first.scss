@@ -1,0 +1,93 @@
+.first {
+	background: url("../img/main-bg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header {
+    font-family: 'Ubuntu-Medium';
+    width: 100%;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    &:after{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 12px;
+        @include circle(5px, #fff);
+    }
+    &:last-child:after {
+        display: none;
+    }
+}
+
+.nav__link {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+
+.first .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.first__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    align-items: center;
+    padding-bottom: 10%;
+  }
+
+.first__logo, .first__description {
+    flex-basis: 50%;
+    display: flex;
+  }
+
+.first__description {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__title {
+    color: #f9b43b;
+    font-family: 'Gagalin';
+    font-size: 72px;
+    line-height: 1.42;
+    margin: 0;
+    padding-top: 60px;
+  }
+
+.first__description-text {
+    color: #ffffff;
+    font-family: 'Lifehack';
+    font-size: 65px;
+    line-height: 1;
+}
+
+.scroll-icon {
+    margin-bottom: 60px;
+}
+
