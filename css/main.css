@@ -453,7 +453,8 @@ ul {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-right: 100px; }
 
 .member__photo {
   background-size: cover;
@@ -670,6 +671,14 @@ ul {
   -ms-flex: 1;
   flex: 1;
   text-align: right; }
+
+.phone-icon {
+  margin-right: 5px; }
+
+.social-btn {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px; }
 
 .menu {
   background: url("../../img/menu-bg.jpg") center no-repeat;
