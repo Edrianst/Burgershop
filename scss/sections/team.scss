@@ -1,0 +1,101 @@
+.team {
+    background: url("../img/team-bg.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__wrapper {
+    background-color: rgba(#2f3234, .93);
+    height: 100%;
+    width: 48%;
+    display: flex;
+    position: absolute;
+    padding-top: 90px;
+    padding-left: 80px;
+    right: 0;
+    top: 0;
+}
+
+.team__content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.team__title {
+    padding: 0;
+}
+
+.team__accordeon {
+    padding-top: 80px;
+}
+
+.team__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.team__member {
+    margin-bottom: 40px;
+}
+
+.member__name {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gagalin';
+    font-size: 14px;
+    line-height: 28.11px;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 9px solid transparent;
+        margin-right: 10px;
+        border-top-color: $yellow;
+        border-bottom-width: 0; 
+    }
+}
+
+.member__desc {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.member__photo {
+    background-size: cover;
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+}
+
+.member__info {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.team__member--active {
+    .member__desc {
+        overflow: visible;
+        height: 100%;
+    }
+    .member__name {
+        color: $yellow;
+
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                border: 9px solid transparent;
+                border-bottom-color: $yellow;
+                border-top-width: 0; 
+        }
+    }
+}

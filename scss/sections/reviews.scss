@@ -12,11 +12,15 @@
 	height: 50vh;
     flex: 0 0 25%;
     background-size: cover;
+    filter: grayscale(100%);
 }
 
 .reviews__desc {
     padding: 50px 25px 50px 16px;
     opacity: 0;
+    height: 50vh;
+    background-color: rgba(#2f3234, .7);
+    transition: opacity .3s;
     &:hover {
         opacity: 1;
     }
@@ -38,4 +42,7 @@
 .order-btn--more {
     background-color: $dark;
     margin: 0;
+    &:hover {
+        background-color: darken($dark, 7%);
+    }
 }

@@ -1,0 +1,122 @@
+.order {
+    background: url("../../img/order-bg.jpg") center no-repeat;
+    background-size: cover;   
+}
+
+.form {
+    margin-top: 80px;
+}
+
+.form__wrapper {
+    display: flex;
+}
+
+.form__content {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form__left {
+    flex-basis: 50%;
+    margin-right: 20px;
+}
+
+.form__right {
+    flex-basis: 50%;
+}
+
+.form__block-title {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+}
+
+.form__input--textarea {
+    resize: none;
+    height: 119px;
+}
+
+.form__row {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.form__row--comment {
+    margin-bottom: 15px;
+}
+
+.form__row--trigs {
+    margin-bottom: 13px;
+}
+
+.form__block {
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__block--radio {
+    position: relative;
+    margin-left: 25px;
+    margin-right: 0;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -25px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #fff;
+    }   
+}
+
+.form__input--radio:checked {
+    &+.form__block--radio{
+        &:before {
+           background: url("../../img/radio-icon.png") center no-repeat #fff;
+        }
+    }
+}
+
+.form__input--check:checked {
+    &+.form__block--check{
+        &:before {
+           background: url("../../img/check-icon.png") center no-repeat #fff;
+        }
+    }
+}
+
+.form__block--check {
+    position: relative;
+    margin-left: 25px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -25px;
+        width: 15px;
+        height: 15px;
+        border-radius: 1px;
+        background-color: #fff;
+    }   
+}
+
+.form__reset-btn {
+    border: none;
+    color: #fff;
+    background: transparent;
+}
