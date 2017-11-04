@@ -12,17 +12,35 @@
 	height: 50vh;
     flex: 0 0 25%;
     background-size: cover;
+    background-position: center;
     filter: grayscale(100%);
+
+    @include tablets {
+        flex: 0 0 50%;
+        height: 25vh;
+    }
 }
 
 .reviews__desc {
-    padding: 50px 25px 50px 16px;
+    padding: rem(50px) rem(25px) rem(50px) rem(16px);
     opacity: 0;
     height: 50vh;
     background-color: rgba(#2f3234, .7);
     transition: opacity .3s;
     &:hover {
         opacity: 1;
+    }
+
+    @include tablets {
+        padding: 0;
+        height: 25vh;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
     }
 }
 
@@ -33,10 +51,15 @@
 
 .desc__text {
     color: #fff;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        text-align: center;
+        line-height: rem(20px);
+    }
 }
 
 .order-btn--more {
@@ -45,4 +68,5 @@
     &:hover {
         background-color: darken($dark, 7%);
     }
+
 }

@@ -1,7 +1,7 @@
 .menu {
     background: url("../img/menu-bg.jpg") center no-repeat;
     background-size: cover;
-    padding-left: 50px;
+    padding-left: rem(50px);
     position: relative;
 }
 
@@ -41,7 +41,7 @@
     background: url("../img/item-bg.jpg") center no-repeat;
     background-size: cover; 
     height: 100%;
-    width: 80px;
+    width: rem(80px);
     position: relative;
 }
 
@@ -50,12 +50,12 @@
     font-family: 'Gagalin';
     color: #fff;
     text-decoration: none;
-    font-size: 40px;
+    font-size: rem(40px);
 }
 
 .link-wrapper {
     text-align: center;
-    min-width: 650px;
+    min-width: rem(650px);
     position: absolute;
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0;
@@ -65,14 +65,14 @@
 
 .menu__item-desc {
     display: none;
-    padding-top: 60px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-top: rem(60px);
+    padding-left: rem(35px);
+    padding-right: rem(35px);
     height: 100%;
-    width: 540px;
+    width: rem(540px);
     color: #fff;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     text-align: left;
     background-color: rgba(#2f3234, .93);
 }

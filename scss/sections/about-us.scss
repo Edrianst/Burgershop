@@ -3,7 +3,7 @@
 	background-position: center;
 	background-size: cover;
 	text-align: center;
-	padding-top: 80px;
+	padding-top: rem(80px);
 }
 
 .about-us .container {
@@ -16,12 +16,12 @@
 .about-us__title {
     font-family: 'Gagalin';
 	margin: 0;
-	font-size: 72px;
-	margin-bottom: 80px;
+	font-size: rem(72px);
+	margin-bottom: rem(80px);
 }
 
 .about-us__item {
-	width: 280px;
+	width: rem(280px);
 }
 
 .item__title {
@@ -32,7 +32,7 @@
 .item__text {
     font-family: 'Ubuntu';
 	font-weight: lighter;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: rem(14px);
+	line-height: rem(24px);
 	color: grey;
 }
