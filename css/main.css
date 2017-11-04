@@ -483,7 +483,7 @@ ul {
     border-top-width: 0; }
 
 .order {
-  background: url("../../img/order-bg.jpg") center no-repeat;
+  background: url("../img/order-bg.jpg") center no-repeat;
   background-size: cover; }
 
 .form {
@@ -574,10 +574,10 @@ ul {
     background: #fff; }
 
 .form__input--radio:checked + .form__block--radio:before {
-  background: url("../../img/radio-icon.png") center no-repeat #fff; }
+  background: url("../img/radio-icon.png") center no-repeat #fff; }
 
 .form__input--check:checked + .form__block--check:before {
-  background: url("../../img/check-icon.png") center no-repeat #fff; }
+  background: url("../img/check-icon.png") center no-repeat #fff; }
 
 .form__block--check {
   position: relative;
@@ -608,7 +608,7 @@ ul {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: url("../../img/footer-bg.jpg") center no-repeat;
+  background: url("../img/footer-bg.jpg") center no-repeat;
   background-size: cover;
   color: #fff;
   display: -webkit-box;
@@ -681,7 +681,7 @@ ul {
   margin-right: 20px; }
 
 .menu {
-  background: url("../../img/menu-bg.jpg") center no-repeat;
+  background: url("../img/menu-bg.jpg") center no-repeat;
   background-size: cover;
   padding-left: 50px;
   position: relative; }
@@ -734,7 +734,7 @@ ul {
   display: block; }
 
 .menu__item-title {
-  background: url("../../img/item-bg.jpg") center no-repeat;
+  background: url("../img/item-bg.jpg") center no-repeat;
   background-size: cover;
   height: 100%;
   width: 80px;
