@@ -20,12 +20,17 @@
 
     @include tablets {
         flex-direction: column;
+        padding: 0 20%;
     }
 }
 
 .form__left {
     flex-basis: 50%;
     margin-right: rem(20px);
+
+    @include tablets {
+        margin-right: 0;
+    }
 }
 
 .form__right {
