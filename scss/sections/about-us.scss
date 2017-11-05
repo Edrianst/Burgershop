@@ -10,7 +10,11 @@
     display: flex;
 	justify-content: space-around;
     align-items: baseline;
-    flex-direction: row;
+	flex-direction: row;
+	
+	@include phones {
+		flex-direction: column;
+	}
 }
 
 .about-us__title {
@@ -21,12 +25,20 @@
 }
 
 .about-us__item {
-	width: rem(280px);
+	@include phones {
+		display: flex;
+		justify-content: center;
+		flex-wrap: nowrap;
+		margin-bottom: rem(40px);
+	}
 }
 
 .item__title {
 	font-family: 'Lifehack';
 	margin-bottom: 0;
+	@include phones {
+		display: block;
+	}
 }
 
 .item__text {
@@ -35,4 +47,5 @@
 	font-size: rem(14px);
 	line-height: rem(24px);
 	color: grey;
+	white-space: space;
 }

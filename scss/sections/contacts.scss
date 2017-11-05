@@ -24,6 +24,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .footer__left {
@@ -31,6 +35,10 @@
     flex: 1;
     font-size: 14px;
     line-height: 24px;
+
+    @include phones {
+        text-align: center;
+    }
 }
 
 .adress {
@@ -51,6 +59,12 @@
 
 .phone-icon {
     margin-right: 5px;
+}
+
+.socials {
+    @include phones {
+        margin-bottom: rem(15px);
+    }
 }
 
 .social-btn {
