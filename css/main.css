@@ -22,6 +22,31 @@
 .reviews__item--8 {
   background: url("../img/photo-8.jpg"); }
 
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/ubuntu-medium-webfont.woff") format("woff"), url("../fonts/Ubuntu/ubuntu-medium-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gagalin';
+  src: url("../fonts/Gagalin/Gagalin-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lifehack';
+  src: url("../fonts/lifehack_medium-webfont.eot");
+  src: url("../fonts/lifehack_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lifehack Medium.otf") format("opentype"), url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff"), url("../fonts/lifehack_medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   margin: 0;
   padding: 0;
@@ -129,7 +154,7 @@ ul {
 
 .header {
   font-family: 'Ubuntu';
-  font-weight: 900;
+  font-weight: 700;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -413,7 +438,8 @@ ul {
       -webkit-flex: 0 0 50%;
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
-      height: 25vh; } }
+      height: 25vh;
+      min-height: 162.5px; } }
 
 .reviews__desc {
   padding: 3.125rem 1.5625rem 3.125rem 1rem;
@@ -429,6 +455,7 @@ ul {
     .reviews__desc {
       padding: 0;
       height: 25vh;
+      min-height: 162.5px;
       text-align: center;
       position: absolute;
       top: 0;
@@ -449,7 +476,11 @@ ul {
   @media screen and (max-width: 768px) {
     .desc__text {
       text-align: center;
-      line-height: 1.25rem; } }
+      line-height: 1.25rem;
+      font-size: 0.8125rem; } }
+  @media screen and (max-width: 480px) {
+    .desc__text {
+      display: none; } }
 
 .order-btn--more {
   background-color: #2f3234;
@@ -715,14 +746,13 @@ ul {
 
 .form__input--textarea {
   resize: none;
-  height: 7.4375rem; }
+  height: 7.125rem; }
 
 .form__row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 1.25rem; }
+  display: flex; }
 
 .form__row--comment {
   margin-bottom: 0.9375rem; }
@@ -752,7 +782,7 @@ ul {
   .form__block--radio:before {
     content: "";
     position: absolute;
-    top: 0.3125rem;
+    top: 1.125rem;
     left: -1.5625rem;
     width: 0.9375rem;
     height: 0.9375rem;
@@ -777,7 +807,7 @@ ul {
   .form__block--check:before {
     content: "";
     position: absolute;
-    top: 0.3125rem;
+    top: 1.125rem;
     left: -1.5625rem;
     width: 0.9375rem;
     height: 0.9375rem;

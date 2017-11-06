@@ -2,11 +2,13 @@
 @import "config/mixins";
 @import "config/vars";
 
+//media
+@import "layout/media";
+
 //layout
+@import "layout/fonts";
 @import "layout/base";
 @import "layout/adjustments";
-@import "layout/fonts";
-@import "layout/media";
 
 //sections
 @import "sections/first";

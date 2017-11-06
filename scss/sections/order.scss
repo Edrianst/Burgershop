@@ -83,12 +83,11 @@
 
 .form__input--textarea {
     resize: none;
-    height: rem(119px);
+    height: rem(114px);
 }
 
 .form__row {
    display: flex;
-   margin-bottom: rem(20px);
 }
 
 .form__row--comment {
@@ -125,7 +124,7 @@
     &:before {
         content: "";
         position: absolute;
-        top: rem(5px);
+        top: rem(18px);
         left: rem(-25px);
         width: rem(15px);
         height: rem(15px);
@@ -162,7 +161,7 @@
     &:before {
         content: "";
         position: absolute;
-        top: rem(5px);
+        top: rem(18px);
         left: rem(-25px);
         width: rem(15px);
         height: rem(15px);
