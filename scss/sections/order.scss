@@ -1,6 +1,7 @@
 .order {
     background: url("../img/order-bg.jpg") center no-repeat;
-    background-size: cover;   
+    background-size: cover;
+    display: flex;   
 }
 
 .form {
@@ -33,8 +34,11 @@
 }
 
 .order__title {
+    text-align: center;
     @include phones {
-        text-align: center;
+        padding: 0;
+        font-size: rem(60px);
+        line-height: rem(70px);
     }
 }
 
@@ -100,6 +104,10 @@
 
 .form__row--trigs {
     margin-bottom: rem(13px);
+
+    @include phones {
+        margin: 0;
+    }
 }
 
 .form__block {
@@ -161,13 +169,24 @@
     &:before {
         content: "";
         position: absolute;
-        top: rem(18px);
+        top: rem(15px);
         left: rem(-25px);
         width: rem(15px);
         height: rem(15px);
         border-radius: rem(1px);
         background-color: #fff;
     }   
+    .form__block-title {
+        margin-top: rem(10px);
+        margin-bottom: rem(30px);
+    }
+}
+
+
+.form__btns {
+    @include phones {
+        margin-bottom: rem(30px);
+    }
 }
 
 .form__reset-btn {
