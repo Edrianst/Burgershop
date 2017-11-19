@@ -858,7 +858,9 @@ ul {
       align-items: center; } }
 
 .form__block-title {
+  display: inline-block;
   color: #fff;
+  margin-top: 0.9375rem;
   margin-bottom: 0.3125rem; }
 
 @media screen and (max-width: 480px) {
@@ -913,7 +915,7 @@ ul {
   .form__block--radio:before {
     content: "";
     position: absolute;
-    top: 1.125rem;
+    top: 1.25rem;
     left: -1.5625rem;
     width: 0.9375rem;
     height: 0.9375rem;

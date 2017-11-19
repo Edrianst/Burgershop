@@ -67,7 +67,9 @@
 }
 
 .form__block-title {
+    display: inline-block;
     color: #fff;
+    margin-top: rem(15px);
     margin-bottom: rem(5px);
 }
 
@@ -132,7 +134,7 @@
     &:before {
         content: "";
         position: absolute;
-        top: rem(18px);
+        top: rem(20px);
         left: rem(-25px);
         width: rem(15px);
         height: rem(15px);
