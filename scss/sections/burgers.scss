@@ -1,0 +1,192 @@
+.burgers__container {
+	height: 100%;
+}
+
+.burgers {
+	background: linear-gradient(to bottom, $yellow, #f08d35, $yellow);
+}
+
+.slider {
+	height: 100%;
+	display: flex;
+	position: relative;
+}
+
+.slider__wrapper {
+	@include tablets {
+		padding-top: 10%;
+	}
+}
+
+.compose {
+	background-color: #f08d35;
+	padding: 10px 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 130px;
+	left: 0;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $orange;
+	}
+
+	@include tablets {
+		top: 40px;
+		left: 15%;
+	}
+
+	@include phones {
+		padding: 5px 20px;
+	}
+}
+
+.burger-photo {
+	display: flex;
+	justify-content: center;
+}
+
+.burger-pic {
+	object-fit: contain;
+
+	@include tablets {
+		width: 80%;
+		height: 80%;
+	}
+}
+
+.ccal {
+	width: 75px;
+	height: 75px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 130px;
+	left: 0;
+
+	@include tablets {
+		top: 40px;
+		left: 80%;
+		bottom: initial;
+	}
+}
+
+.ammount {
+	position: absolute;
+	color: #fff;
+	font-family: 'Gagalin';
+}
+
+.sign {
+	color: #fff;
+	font-family: 'Gagalin';
+}
+
+.arrow-left {
+	position: absolute;
+	transform: rotate(90deg) translateY(-50%);
+	top: 50%;
+	left: -40px;
+
+	@include tablets {
+		left: 30px;
+	}
+
+	@include phones {
+		left: -5px;
+	}
+}
+
+.arrow-right {
+	position: absolute;
+	transform: rotate(-90deg) translateY(-50%);
+	top: 50%;
+	right: -40px;
+
+	@include tablets {
+		right: 30px;
+	}
+
+	@include phones {
+		right: -5px;
+	}
+}
+
+.slider__slide {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+	@include tablets {
+		flex-direction: column;
+		padding: 0 10%;
+	}
+}
+
+.slide__right {
+	padding-bottom: 15%;
+
+	@include tablets {
+		padding: 0;
+	}
+}
+
+.burger__desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	@include tablets {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.burger__name {
+	font-family: 'Gagalin';
+	text-transform: uppercase;
+	font-size: rem(72px);
+	line-height: rem(64px);
+	color: #fff;
+
+	@include tablets {
+		font-size: rem(60px);
+	}
+}
+
+.descrip__text {
+	margin-top: rem(20px);
+	color: #fff;
+    font-size: rem(14px);
+    line-height: rem(24px);
+}
+
+.burger__price {
+	display: flex;
+	align-items: flex-end;
+}
+
+.price__value {
+	font-family: 'Gagalin';
+	color: #e35028;
+	font-size: rem(30px);
+}
+
+.big {
+	font-size: rem(72px);
+
+	@include tablets {
+		font-size: rem(60px);
+	}
+}

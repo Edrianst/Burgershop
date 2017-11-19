@@ -11,6 +11,12 @@
     }
   }
 
+  @for $i from 1 through 4 {
+    .menu__item-title--#{$i} { 
+        background: url("../img/item-bg-#{$i}.jpg");
+    }
+  }
+
   @mixin tablets {
     @media screen and (max-width: $tablets) {
       @content;

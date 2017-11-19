@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    position: relative;
 }
 
 .menu__item {
@@ -38,7 +39,6 @@
 }
 
 .menu__item-title {
-    background: url("../img/item-bg.jpg") center no-repeat;
     background-size: cover; 
     height: 100%;
     width: rem(80px);
@@ -75,5 +75,18 @@
     line-height: rem(24px);
     text-align: left;
     background-color: rgba(#2f3234, .93);
+
+    @include tablets {
+        width: rem(440px);
+    }
+
+    @include phones {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }
 
