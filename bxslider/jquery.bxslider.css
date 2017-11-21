@@ -1,0 +1,80 @@
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+  position: relative;
+
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+/** THEME
+===================================*/
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+  left: -40px;
+  background: url('images/arrow-scroll.svg') no-repeat;
+  transform: rotate(90deg);
+  opacity: .3;
+}
+
+@media screen and (max-width: 768px) {
+  .bx-wrapper .bx-prev {
+    left: 30px;
+  }
+}
+
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  opacity: 1;
+}
+.bx-wrapper .bx-next {
+  right: -40px;
+  background: url('images/arrow-scroll.svg') no-repeat;
+  transform: rotate(-90deg);
+  opacity: .3;
+}
+
+@media screen and (max-width: 768px) {
+  .bx-wrapper .bx-next {
+    right: 30px;
+  }
+}
+
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  opacity: 1;
+}
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+

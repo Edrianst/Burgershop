@@ -6,16 +6,8 @@
 	background: linear-gradient(to bottom, $yellow, #f08d35, $yellow);
 }
 
-.slider {
-	height: 100%;
-	display: flex;
-	position: relative;
-}
-
 .slider__wrapper {
-	@include tablets {
-		padding-top: 10%;
-	}
+	position: relative;
 }
 
 .compose {
@@ -26,17 +18,12 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 130px;
+	top: 0;
 	left: 0;
 	cursor: pointer;
 
 	&:hover {
 		background-color: $orange;
-	}
-
-	@include tablets {
-		top: 40px;
-		left: 15%;
 	}
 
 	@include phones {
@@ -67,13 +54,13 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	bottom: 130px;
+	bottom: 0;
 	left: 0;
 
 	@include tablets {
-		top: 40px;
-		left: 80%;
-		bottom: initial;
+		top: 0;
+		right: 0;
+		left: initial;
 	}
 }
 
@@ -128,11 +115,17 @@
 
 	@include tablets {
 		flex-direction: column;
-		padding: 0 10%;
 	}
 }
 
+.slide__left {
+	display: flex;
+	flex-basis: 50%;
+}
+
 .slide__right {
+	display: flex;
+	flex-basis: 50%;
 	padding-bottom: 15%;
 
 	@include tablets {

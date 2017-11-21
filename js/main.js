@@ -1,73 +1,112 @@
-//Задача №1
+// ham-menu
 
-/*
-var str = 'Наташа козюленька?',
-vowels = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я'],
-result = " ";
+$(function () {
 
-str.split(",");
-for (var i = 0; i <= str.length; i++) {
-  if(vowels.indexOf(str[i]) >= 0){
-    result += str[i];
-  }
-};
+	const menu = $('.hamburger__menu');
 
-console.log(result);
-*/
+	$('.hamburger').on('click', e => {
+		menu.addClass('hamburger__menu--active');
+	})
 
+	$('.close-link').on('click', e => {
+		menu.removeClass('hamburger__menu--active');
+	})
+});
 
-// Задача №2
+//acco-vertial
 
-/*
-var users = [
-  {
-      name: "Алексей",
-      salary: 500
-  },
-  {
-      name: "Виктор",
-      salary: 1300
-  },
-  {
-      name: "Иван",
-      salary: 1500
-  }
-  ];
+$(function () {
+	$('.member__name').on('click', e => {
+		e.preventDefault();
 
-  var checkSalary = function(workers){
-    var result = [];
-    for (var i = 0; i < workers.length; i++) {
-      var user = workers[i];
-      if (user.salary > 1000) {
-        result.push(user.name);
-    }
-  }
-  return result;
-}
-  
-var final = checkSalary(users);
-console.log(final);
-*/
+		const link = $(e.currentTarget);
+		const item = link.closest('.team__member');
+		const container = $('.team__list');
+		const content = $('.member__desc', item);
+		const items = $('.team__member', container);
+		const otherContent = $('.member__desc', container);
+		const block = $('.desc__hidden', content);
+		const height = block.outerHeight();
 
-// Задача №3
+		if (!item.hasClass('team__member--active')) {
 
-// var isHtml = function(path) {
-//   var isHtmlOrNot = path.slice(-4) === "html"
+			items.removeClass('team__member--active');
+			item.addClass('team__member--active');
 
-//   return isHtmlOrNot
-// }
+			otherContent.css({
+				"height": 0
+			})
 
-// console.log(isHtml("/users/download/index.html"));
+			content.css({
+				"height": height
+			})
+		} else {
+			item.removeClass('team__member--active');
+			content.css({
+				"height": 0
+			})
+		}
+	})
+});
 
+//acco-horizontal
 
-var hamburger = document.getElementById('hamburger');
-var menu = document.getElementById('ham-menu');
-var close = document.getElementById('close');
+$(function () {
 
-hamburger.addEventListener('click', function() {
-  menu.classList.add('hamburger__menu--active')
+	const accoWidth = $('.menu__accordeon').width();
+	const screenWidth = $(window).width();
+	const reqWidth = screenWidth - accoWidth;
+
+	$('.menu__item-link').on('click', e => {
+		e.preventDefault();
+
+		const link = $(e.currentTarget);
+		const item = link.closest('.menu__item');
+		const container = $('.menu__list');
+		const content = $('.menu__item-desc', item);
+		const otherContent = $('.menu__item-desc', container);
+		const items = $('.menu__item', container);
+		const block = $('.text-hidden', content);
+		const width = block.outerWidth();
+
+		if (!item.hasClass('menu__item--active')) {
+
+			items.removeClass('menu__item--active');
+			item.addClass('menu__item--active');
+
+			otherContent.css({
+				"width": 0
+			})
+
+			if (screenWidth < 480){
+				content.css({
+					"width" : reqWidth
+				})
+
+				block.css({
+					"width" : reqWidth
+				})
+			} else {
+
+			content.css({
+				"width": width
+			})
+		}
+
+		} else  {
+
+			items.removeClass('menu__item--active');
+			content.css({
+				"width": 0
+			})
+		}
+	})
 })
 
-close.addEventListener('click', function() {
-  menu.classList.remove('hamburger__menu--active')
-})
+//slider 
+$(document).ready(function(){
+	$('.slider').bxSlider({
+		responsive: false,
+		pager: false
+	});
+  });
