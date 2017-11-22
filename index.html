@@ -6,54 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burgers</title>
 	<link rel="stylesheet" href="bxslider/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/jquery.fullpage.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 	<div class="wrapper">
-		<!-- <div class="maincontent"> -->
-			<section class="section first">
-				<div class="hamburger__menu" id="ham-menu">
-					<div class="container menu__container">
-						<div class="menu__top">
-							<div class="header__logo">
-								<img src="img/logo.png" alt="" class="logo">
-							</div>
-							<div class="close-btn">
-								<a href="#" class="close-link" id="close">
-									<img src="img/close-btn.png" alt="close" class="close-pic">
-								</a>
-							</div>
-						</div>
-						<div class="menu__main">
-							<ul class="ham-menu__list">
-								<li class="ham-menu__item">
-									<a href="#" class="ham-menu__link">Почему мы</a>
-								</li>
-								<li class="ham-menu__item">
-									<a href="#" class="ham-menu__link">Меню</a>
-								</li>
-								<li class="ham-menu__item">
-									<a href="#" class="ham-menu__link">Советы</a>
-								</li>
-								<li class="ham-menu__item">
-									<a href="#" class="ham-menu__link">Кто мы</a>
-								</li>
-								<li class="ham-menu__item">
-									<a href="#" class="ham-menu__link">Свяжитесь с нами</a>
-								</li>
-								<li class="ham-menu__item">
-									<a href="#" class="ham-menu__link">Контакты</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+		<div class="maincontent" id="fullpage">
+			<section class="section first" id="firstPage">
 				<div class="container">
 					<header class="header">
 						<div class="header__logo">
-							<img src="img/logo.png" alt="" class="logo">
+							<img src="img/logo.png" alt="logo" class="logo">
 						</div>
 						<div class="header__menu">
 							<nav class="nav">
@@ -92,36 +57,6 @@
 							<h2 class="section__title first__title">Мы делаем</h2>
 							<div class="first__description-text">натуральные бургеры</div>
 						</div>
-						<aside class="sidebar">
-							<nav class="sidebar__nav">
-								<ul class="sidebar__nav-list">
-									<li class="sidebar__nav-item">
-										<a href="#" class="sidebar__nav-link sidebar__nav-link--active"></a>
-									</li>
-									<li class="sidebar__nav-item">
-										<a href="#" class="sidebar__nav-link"></a>
-									</li>
-									<li class="sidebar__nav-item">
-										<a href="#" class="sidebar__nav-link"></a>
-									</li>
-									<li class="sidebar__nav-item">
-										<a href="#" class="sidebar__nav-link"></a>
-									</li>
-									<li class="sidebar__nav-item">
-										<a href="#" class="sidebar__nav-link"></a>
-									</li>
-									<li class="sidebar__nav-item">
-										<a href="#" class="sidebar__nav-link"></a>
-									</li>
-									<li class="sidebar__nav-item">
-										<a href="#" class="sidebar__nav-link"></a>
-									</li>
-									<li class="sidebar__nav-item">
-										<a href="#" class="sidebar__nav-link"></a>
-									</li>
-								</ul>
-							</nav>
-						</aside>
 					</div>
 					<a href="#" class="scroll-icon">
 						<img src="img/icon.png" alt="icon">
@@ -129,7 +64,7 @@
 				</div>
 			</section>
 
-			<section class="section about-us">
+			<section class="section about-us" id="secondPage">
 				<h2 class="about-us__title">Мы лучшие</h2>
 				<div class="container">
 					<div class="about-us__item">
@@ -164,7 +99,7 @@
 				</div>
 			</section>
 
-			<section class="section burgers">
+			<section class="section burgers" id="thirdPage">
 				<div class="container burgers__container">
 					<div class="slider__wrapper slider">
 						<div class="slider__slide">
@@ -200,6 +135,56 @@
 								<img src="img/icons/burger.svg" alt="compose" class="compose-pic">
 								<span class="sign">состав</span>
 							</div>
+							<div class="compose__popup">
+								<ul class="compose__list">
+									<li class="compose__item">
+										<div class="compose__pic">
+											<img src="img/icons/beef.svg" alt="compose">
+										</div>
+										<div class="compose__name">Говядина</div>
+										<div class="compose__weight">300г</div>
+
+									</li>
+									<li class="compose__item">
+										<div class="compose__pic">
+											<img src="img/icons/buns.svg" alt="compose">
+										</div>
+										<div class="compose__name">Булочки</div>
+										<div class="compose__weight">100г</div>
+									</li>
+									<li class="compose__item">
+										<div class="compose__pic">
+											<img src="img/icons/salad.svg" alt="compose">
+										</div>
+										<div class="compose__name">Зелень</div>
+										<div class="compose__weight">70г</div>
+									</li>
+									<li class="compose__item">
+										<div class="compose__pic">
+											<img src="img/icons/sauce.svg" alt="compose">
+										</div>
+										<div class="compose__name">Соус</div>
+										<div class="compose__weight">150г</div>
+									</li>
+									<li class="compose__item">
+										<div class="compose__pic">
+											<img src="img/icons/cucumber.svg" alt="compose">
+										</div>
+										<div class="compose__name">Овощи</div>
+										<div class="compose__weight">200г</div>
+									</li>
+									<li class="compose__item">
+										<div class="compose__pic">
+											<img src="img/icons/cheese.svg" alt="compose">
+										</div>
+										<div class="compose__name">Сыр</div>
+										<div class="compose__weight">80г</div>
+									</li>
+								</ul>
+								<a class="compose__close">
+									<img src="img/icons/close-popup.png" alt="close">
+								</a>
+							</div>
 							<div class="ccal">
 								<img src="img/icons/kkal.svg" alt="ccal" class="ccal-pic">
 								<span class="ammount">1200</span>
@@ -223,18 +208,11 @@
 								</div>
 							</div>
 						</div>
-
-						<!-- <div class="arrow-left">
-							<img src="img/icons/arrow-scroll.svg" alt="" class="arrow-pic">
-						</div>
-						<div class="arrow-right">
-							<img src="img/icons/arrow-scroll.svg" alt="" class="arrow-pic">
-						</div> -->
 					</div>
 				</div>
 			</section>
 
-			<section class="section team">
+			<section class="section team" id="fourthPage">
 				<div class="team__wrapper">
 					<div class="team__content">
 						<div class="section__title team__title">Команда</div>
@@ -294,7 +272,7 @@
 				</div>
 			</section>
 
-			<section class="section menu">
+			<section class="section menu" id="fifthPage">
 				<div class="section__title menu__title">Меню</div>
 				<div class="menu__wrapper">
 					<div class="menu__accordeon">
@@ -355,7 +333,7 @@
 				</div>
 			</section>
 
-			<section class="section reviews">
+			<section class="section reviews" id="sixthPage">
 				<div class="reviews__item reviews__item--1">
 					<div class="reviews__desc">
 						<h4 class="desc__title">Константин Спилберг</h4>
@@ -438,7 +416,7 @@
 				</div>
 			</section>
 
-			<section class="section order">
+			<section class="section order" id="seventhPage">
 				<div class="container">
 					<h2 class="section__title order__title">Закажите доставку</h2>
 					<div class="form">
@@ -514,7 +492,7 @@
 				</div>
 			</section>
 
-			<section class="section contacts">
+			<section class="section contacts" id="eightPage">
 				<div class="contacts__content">
 					<img src="img/contacts-bg.jpg" alt="map" class="map-photo">
 					<div class="contacts__footer">
@@ -546,11 +524,51 @@
 					</div>
 				</div>
 			</section>
-		<!-- </div> -->
+		</div>
+	</div>
+
+	<!-- Hamburger menu -->
+
+	<div class="hamburger__menu" id="ham-menu">
+		<div class="container menu__container">
+			<div class="menu__top">
+				<div class="header__logo">
+					<img src="img/logo.png" alt="" class="logo">
+				</div>
+				<div class="close-btn">
+					<a href="#" class="close-link" id="close">
+						<img src="img/close-btn.png" alt="close" class="close-pic">
+					</a>
+				</div>
+			</div>
+			<div class="menu__main">
+				<ul class="ham-menu__list">
+					<li class="ham-menu__item">
+						<a href="#" class="ham-menu__link">Почему мы</a>
+					</li>
+					<li class="ham-menu__item">
+						<a href="#" class="ham-menu__link">Меню</a>
+					</li>
+					<li class="ham-menu__item">
+						<a href="#" class="ham-menu__link">Советы</a>
+					</li>
+					<li class="ham-menu__item">
+						<a href="#" class="ham-menu__link">Кто мы</a>
+					</li>
+					<li class="ham-menu__item">
+						<a href="#" class="ham-menu__link">Свяжитесь с нами</a>
+					</li>
+					<li class="ham-menu__item">
+						<a href="#" class="ham-menu__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="bxslider/jquery.bxslider.min.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

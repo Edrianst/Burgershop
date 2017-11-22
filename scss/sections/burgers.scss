@@ -183,3 +183,76 @@
 		font-size: rem(60px);
 	}
 }
+
+.compose__popup {
+	display: none;
+	background-color: rgba(255, 255, 255, .93);
+	border-radius: 3px;
+	font-size: 14px;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	padding: 20px 40px; 
+
+	&--active {
+		display: flex;
+	}
+
+	&:hover {
+		display: flex;
+	}
+
+	@include tablets {
+		left: 90px;
+	}
+
+	@include phones {
+		padding-right: 60px;
+		left: 80px;
+
+	}
+}
+
+.compose__list {
+	width: 270px;
+	display: flex;
+	flex-direction: column;
+	@include phones {
+		width: 210px;
+	}
+}
+
+.compose__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	text-align: left;
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+.compose__close {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	right: 20px;
+
+	@include phones {
+		display: block;
+	}
+}
+
+.compose__pic {
+	width: 50px;
+	height: 50px;
+}
+
+.compose__name {
+	font-weight: 700;
+}
+
+.compose__weight {
+	margin-left: auto;
+}
