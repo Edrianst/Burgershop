@@ -174,7 +174,7 @@ function initMap() {
 	  disableDefaultUI: true,
 	  draggable: false
 	});
-	var image = 'img/icons/map-marker.svg';
+	var image = {url: 'img/icons/map-marker.svg'};
 	var firstMarker = new google.maps.Marker({
 	  position: first,
 	  map: map,
