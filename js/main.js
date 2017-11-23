@@ -133,12 +133,10 @@ $(document).ready(function () {
 	$('#fullpage').fullpage({
 		verticalCentered: false,
 		navigation: true
-		// anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eightPage'],
-		// menu: '#mymenu'
 	});
 });
 
-//scroll from top menu
+//scroll from top menus
 
 $(function () {
 	$('.nav__item').on('click', e => {
@@ -146,12 +144,7 @@ $(function () {
 		const link = $(e.currentTarget);
 		$.fn.fullpage.moveTo(link.index() + 2);
 
-	})
-})
-
-// scroll from ham-menu
-
-$(function () {
+	});
 	const menu = $('.hamburger__menu');
 	const scroll = section => {
 		$.fn.fullpage.moveTo(section.index() + 2)

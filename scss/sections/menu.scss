@@ -3,6 +3,10 @@
     background-size: cover;
     padding-left: rem(50px);
     position: relative;
+
+    @include phones {
+        padding-left: rem(10px);
+    }
 }
 
 .menu__wrapper {
@@ -87,6 +91,7 @@
 
     @include phones {
         width: auto;
+        padding-top: 0;
     }
 }
 

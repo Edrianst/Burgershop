@@ -18,10 +18,13 @@
 }
 
 .about-us__title {
-    font-family: 'Gagalin';
-	margin: 0;
-	font-size: rem(72px);
+	color: #000;
 	margin-bottom: rem(80px);
+	padding-top: 0;
+
+	@include tablets {
+		margin-bottom: rem(30px);
+	}
 }
 
 .about-us__item {
@@ -30,6 +33,10 @@
 		justify-content: center;
 		flex-wrap: nowrap;
 		margin-bottom: rem(40px);
+	}
+
+	@include phones {
+		margin-bottom: 0;
 	}
 }
 
@@ -41,6 +48,11 @@
 	}
 }
 
+.menu__logo {
+	width: 70px;
+	height: auto;
+}
+
 .item__text {
     font-family: 'Ubuntu';
 	font-weight: lighter;
@@ -48,4 +60,10 @@
 	line-height: rem(24px);
 	color: grey;
 	white-space: space;
+}
+
+.item__desc {
+	@include phones {
+		width: 80%;
+	}
 }

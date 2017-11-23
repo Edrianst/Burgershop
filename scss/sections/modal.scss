@@ -1,0 +1,26 @@
+.modal__title {
+    font-family: 'Gagalin';
+    color: #2f3234;
+    margin: 0;
+    margin-bottom: rem(20px);
+}
+
+.modal__text {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: #2f3234;
+    font-size: rem(14px);
+    line-height: rem(24px);
+}
+
+#hidden-content {
+    width: rem(480px);
+    height: rem(275px);
+    border-radius: 3px;
+
+    @include phones {
+        width: rem(350px);
+        height: rem(255px);
+    }
+}
+

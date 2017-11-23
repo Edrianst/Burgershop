@@ -37,6 +37,7 @@
     text-align: center;
     @include phones {
         padding: 0;
+        line-height: 1;
     }
 }
 
@@ -69,6 +70,10 @@
     color: #fff;
     margin-top: rem(15px);
     margin-bottom: rem(5px);
+
+    @include phones {
+        margin-top: 0;
+    }
 }
 
 .form__block--hidden {
@@ -138,6 +143,10 @@
         height: rem(15px);
         border-radius: 50%;
         background: #fff;
+
+        @include phones {
+            top: 5px;
+        }
     }   
 }
 
