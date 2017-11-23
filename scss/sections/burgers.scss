@@ -38,6 +38,8 @@
 
 .burger-pic {
 	object-fit: contain;
+	max-width: 400px;
+	max-height: 400px;
 
 	@include tablets {
 		width: 80%;

@@ -159,3 +159,40 @@ $(function () {
 		}, 500);
 	})
 })
+
+
+// map
+function initMap() {
+	var center = {lat: 59.934467, lng: 30.338167};
+	var first = {lat: 59.915208, lng: 30.466989};
+	var second = {lat: 59.945098, lng: 30.389793};
+	var third = {lat: 59.968174, lng: 30.311903};
+	var fourth = {lat: 59.889430, lng: 30.314880};
+	var map = new google.maps.Map(document.getElementById('map'), {
+	  zoom: 11,
+	  center: center,
+	  disableDefaultUI: true,
+	  draggable: false
+	});
+	var image = '../img/icons/map-marker.svg';
+	var firstMarker = new google.maps.Marker({
+	  position: first,
+	  map: map,
+	  icon: image
+	});
+	var secondMarker = new google.maps.Marker({
+	  position: second,
+	  map: map,
+	  icon: image
+	});
+	var thirdMarker = new google.maps.Marker({
+	  position: third,
+	  map: map,
+	  icon: image
+	});
+	var fourthMarker = new google.maps.Marker({
+	  position: fourth,
+	  map: map,
+	  icon: image
+	});
+  }

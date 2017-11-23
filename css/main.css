@@ -478,7 +478,7 @@ ul {
       flex-direction: column; } }
 
 .about-us__title {
-  color: #000;
+  color: #2f3234;
   margin-bottom: 5rem;
   padding-top: 0; }
   @media screen and (max-width: 768px) {
@@ -970,8 +970,14 @@ ul {
   width: 100%;
   height: 100vh; }
 
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: 300px; }
+
 .contacts__content {
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .contacts__footer {
   width: 100%;
@@ -1041,6 +1047,13 @@ ul {
 .phone {
   padding-bottom: 5px;
   color: #e25028; }
+
+.phone__link {
+  color: #e25028;
+  text-decoration: none;
+  font-weight: 700; }
+  .phone__link:hover {
+    text-decoration: underline; }
 
 .footer__right {
   -webkit-flex-basis: 50%;
@@ -1242,7 +1255,9 @@ ul {
 
 .burger-pic {
   -o-object-fit: contain;
-  object-fit: contain; }
+  object-fit: contain;
+  max-width: 400px;
+  max-height: 400px; }
   @media screen and (max-width: 768px) {
     .burger-pic {
       width: 80%;
