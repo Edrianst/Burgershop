@@ -170,9 +170,7 @@ function initMap() {
 	var fourth = {lat: 59.889430, lng: 30.314880};
 	var map = new google.maps.Map(document.getElementById('map'), {
 	  zoom: 11,
-	  center: center,
-	  disableDefaultUI: true,
-	  draggable: false
+	  center: center
 	});
 	var image = {url: 'img/icons/map-marker.svg'};
 	var firstMarker = new google.maps.Marker({
