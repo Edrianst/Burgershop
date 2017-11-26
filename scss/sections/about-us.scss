@@ -4,6 +4,9 @@
 	background-size: cover;
 	text-align: center;
 	padding-top: rem(80px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .about-us .container {
