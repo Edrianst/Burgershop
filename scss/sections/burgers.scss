@@ -27,13 +27,18 @@
 	}
 
 	@include phones {
-		padding: 5px 20px;
+		padding: 0 10px;
 	}
 }
 
 .burger-photo {
 	display: flex;
 	justify-content: center;
+
+	@include phones {
+		max-width: 300px;
+		max-height: 200px;
+	}
 }
 
 .burger-pic {
@@ -211,7 +216,7 @@
 
 	@include phones {
 		padding: 5px;
-		left: 80px;
+		left: 66px;
 
 	}
 }
@@ -229,7 +234,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
+	width: 80%;
 	text-align: left;
 	&:last-child {
 		padding-bottom: 0;
@@ -248,6 +253,8 @@
 
 	@include phones {
 		display: block;
+		right: 10px;
+		top: 10px;
 	}
 }
 

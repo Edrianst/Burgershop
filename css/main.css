@@ -601,6 +601,7 @@ ul {
       display: none; } }
 
 .order-btn--more {
+  cursor: pointer;
   background-color: #2f3234;
   margin: 0; }
   .order-btn--more:hover {
@@ -1241,7 +1242,7 @@ ul {
     background-color: #e25028; }
   @media screen and (max-width: 480px) {
     .compose {
-      padding: 5px 20px; } }
+      padding: 0 10px; } }
 
 .burger-photo {
   display: -webkit-box;
@@ -1252,6 +1253,10 @@ ul {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .burger-photo {
+      max-width: 300px;
+      max-height: 200px; } }
 
 .burger-pic {
   -o-object-fit: contain;
@@ -1469,7 +1474,7 @@ ul {
   @media screen and (max-width: 480px) {
     .compose__popup {
       padding: 5px;
-      left: 80px; } }
+      left: 66px; } }
 
 .compose__list {
   width: 270px;
@@ -1499,7 +1504,7 @@ ul {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   text-align: left; }
   .compose__item:last-child {
     padding-bottom: 0; }
@@ -1516,7 +1521,9 @@ ul {
   right: 20px; }
   @media screen and (max-width: 480px) {
     .compose__close {
-      display: block; } }
+      display: block;
+      right: 10px;
+      top: 10px; } }
 
 .compose__pic {
   width: 50px;
